@@ -1,0 +1,19 @@
+Expression=/$PWD filter="*"{
+ workflow.rb
+ workflow.md
+ lib=lib{
+  sinatra.rb
+ }
+ test=test{
+  test_helper.rb
+ }
+ www=www{
+  views=views{
+   entity_list=entity_list{
+    Gene=Gene{
+     GEO_expression.haml
+    }
+   }
+  }
+ }
+}
