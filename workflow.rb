@@ -20,7 +20,7 @@ module Expression
   input :samples, :array, "Samples to average"
   task :average_samples => :tsv
 
-  input :matrix_file, :string, "Sample matrix"
+  input :matrix_file, :file, "Sample matrix"
   input :main, :array, "Samples to average"
   input :contrast, :array, "Samples to average"
   input :log2, :boolean, "Perform log2 correction", false
